@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+
+<head lang="pt-br">
+    <title>Music Awards 2020</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="keywords" content="HTML, CSS, JS, Music, Awards, Form">
+    <meta name="description" content="Formulário google para portfólio / Google form for portfolio">
+    <meta name="author" content="Filipe Davi">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--Meu css-->
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+    <header class="container mt-3">
+        <section class="row justify-content-center">
+            <figure class="col-11 backgroundHeader col-lg-9 col-xl-7">
+
+            </figure>
+            <!-- <figure class="col">
+                <img src="Img/paul-zoetemeijer-ruujnFOHS30-unsplash.jpg" alt="Imagem Título: bola de discoteca"
+                class="img-fluid">
+            </figure>-->
+        </section>
+
+        <section class="TituloForm row justify-content-center">
+            <article class="col-11 bwhite px-4 py- col-lg-9 col-xl-7">
+                <!-- <div class="border"></div> -->
+                <h1 class="titleBloc">Filipe Music Awards 2020</h1>
+                <p>Escolha o/a melhor artista, álbum, vídeo clipe e música do ano.</p>
+                <p style="color:red"><sup>*</sup>Required</p>
+            </article>
+        </section>
+    </header>
+
+    <main class="container">
+        <form class="row justify-content-center mt-3" name="formname" onsubmit="return validateForm()">
+            <fieldset id="nomecampo" class="Nome Bloco px-4 py-2 col-11 bwhite col-lg-9 col-xl-7">
+                <label class="titleBloc d-block mt-2" for="nome">Digite seu nome<sup>*</sup></label>
+                <input type="text" id="nome" name="nome" class="mt-3 mb-4" placeholder="Your answer">
+
+            </fieldset>
+
+            <fieldset id="idadecampo" class="Idade Bloco px-4 py-2 col-11 bwhite mt-3 col-lg-9 col-xl-7">
+                <label class="titleBloc d-block mt-3 mb-3">Selecione sua faixa etária<sup>*</sup></label>
+
+                <input type="radio" name="age" id="ate15" value="Ate15">
+                <label class="mb-3" for="ate15">Até 15 anos</label>
+                <br>
+
+                <input type="radio" name="age" id="16ate25" value="16ate25">
+                <label class="mb-3" for="16ate25">16 até 25 anos</label>
+                <br>
+
+                <input type="radio" name="age" id="26ate35" value="26ate35">
+                <label class="mb-3" for="26ate35">26 até 35 anos</label>
+                <br>
+
+                <input type="radio" name="age" id="36ate45" value="36ate45">
+                <label class="mb-3" for="36ate45">36 até 45 anos</label>
+                <br>
+
+                <input type="radio" name="age" id="46anos" value="46anos">
+                <label class="mb-3" for="46anos">+46 anos</label>
+            </fieldset>
+
+
+            <fieldset id="generocampo" class="Genero Bloco px-4 py-2 col-11 bwhite mt-3 col-lg-9 col-xl-7">
+                <label class="titleBloc mt-3 mb-3">Gênero<sup>*</sup></label>
+                <br>
+
+                <input type="radio" name="gender" value="F" id="fem">
+                <label class="mb-3" for="fem">Feminino</label>
+                <br>
+
+                <input type="radio" name="gender" value="M" id="masc">
+                <label class="mb-3" for="masc">Masculino</label>
+                <br>
+
+                <input type="radio" name="gender" value="NB" id="noBi">
+                <label class="mb-3" for="noBi">Não-binário</label>
+                <br>
+
+            </fieldset>
+
+            <fieldset id="albumcampo" class="Album Bloco px-4 py-2 col-11 bwhite mt-3 col-lg-9 col-xl-7">
+                <label class="titleBloc mt-3 mb-3">Escolha seu álbum favorito de 2020<sup>*</sup></label>
+                <br>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 card col-md-5 mb-3 mb-md-3">
+                            <figure class="col-10 mx-auto col-md-12 pt-2">
+                                <img src="img/the-weeknd-after-hours.jpg" alt="Capa Álbum After Hours"
+                                    class="img-fluid">
+                            </figure>
+                            <label class="mb-4" for="TW"> <input type="radio" name="album" value="AH" id="TW">
+                                After
+                                Hours - The Weeknd</label>
+                        </div>
+
+                        <br>
+
+                        <div class="col-12 card col-md-5 offset-md-1 mb-3 mb-md-3">
+
+                            <figure class="col-10 mx-auto col-md-12 pt-2">
+                                <img src="img/Manic - Halsey.jpg" alt="Capa Álbum After Hours" class="img-fluid">
+                            </figure>
+
+                            <label class="mb-4" for="HY"><input type="radio" name="album" value="MA" id="HY"> Manic
+                                -
+                                Halsey</label>
+
+
+                        </div>
+                        <br>
+
+
+                        <div class="col-12 card col-md-5 mb-3 mb-md-3">
+                            <figure class="col-10 mx-auto col-md-12 pt-2">
+                                <img src="img/rina-sawayama.jpg" alt="Capa Álbum After Hours" class="img-fluid">
+                            </figure>
+
+                            <label class="mb-4 mb-md-5" for="RS"> <input type="radio" name="album" value="SY" id="RS">
+                                Sawayama - Rina Sawayama</label>
+
+                        </div>
+
+                        <br>
+
+                        <div class="col-12 card col-md-5 offset-md-1 mb-3 mb-md-3">
+                            <figure class="col-10 mx-auto col-md-12 pt-2">
+                                <img src="img/Corpo sem juizo - Jup.jpg" alt="Capa Álbum After Hours" class="img-fluid">
+                            </figure>
+
+                            <label class="mb-4" for="JB"> <input type="radio" name="album" value="CsJ" id="JB"> Corpo
+                                sem juizo - Jup do Bairro</label>
+                        </div>
+
+                        <br>
+
+                        <div class="col-12 card col-md-5 mb-3 mb-md-3">
+                            <figure class="col-10 mx-auto col-md-12 pt-2">
+                                <img src="img/dua-lipa-future-nostalgia-capa-696x696.jpg" alt="Capa Álbum After Hours"
+                                    class="img-fluid">
+                            </figure>
+
+                            <label class="mb-4" for="DL"> <input type="radio" name="album" value="FN" id="DL"> Future
+                                Nostalgia - Dua Lipa</label>
+
+                        </div>
+                        <br>
+
+                        <div class="col-12 col-md-5 offset-md-1 mb-md-3">
+                            <label class="mb-4" for="other"> <input type="radio" name="album" value="other" id="other">
+                                Outro</label>
+                            <input id="otherAlbum" type="text" placeholder="Your answer">
+                        </div>
+                        <br>
+
+                    </div>
+                </div>
+
+            </fieldset>
+
+            <fieldset id="artistacampo" class="Artista Bloco px-4 py-2 col-11 bwhite mt-3 col-lg-9 col-xl-7">
+                <label class="titleBloc mt-3 mb-3">Melhor artista<sup>*</sup></label>
+                <br>
+
+                <input type="radio" name="art" value="The Weeknd" id="ATW">
+                <label class="mb-3" for="ATW">The Weeknd</label>
+                <br>
+
+                <input type="radio" name="art" value="Lady Gaga" id="ALG">
+                <label class="mb-3" for="ALG">Lady Gaga</label>
+                <br>
+
+                <input type="radio" name="art" value="Halsey" id="AHY">
+                <label class="mb-3" for="AHY">Halsey</label>
+                <br>
+
+                <input type="radio" name="art" value="Jup do Bairro" id="AJB">
+                <label class="mb-3" for="AJB">Jup do Bairro</label>
+                <br>
+
+                <input type="radio" name="art" value="Pabllo Vittar" id="APV">
+                <label class="mb-3" for="APV">Pabllo Vittar</label>
+                <br>
+
+                <input type="radio" name="art" value="Rina Sawayama" id="ARS">
+                <label class="mb-3" for="ARS">Rina Sawayama</label>
+                <br>
+
+                <input type="radio" name="art" value="other" id="otherArt">
+                <label for="otherArt">other:</label>
+                <input id="otherArt2" class="mb-3" type="text" placeholder="Your answer">
+            </fieldset>
+
+            <fieldset id="musicacampo" class="Musica Bloco px-4 py-2 col-11 bwhite mt-3 col-lg-9 col-xl-7">
+                <label class="titleBloc mt-2 mb-3">Melhor Música<sup>*</sup></label>
+                <br>
+
+                <input type="radio" name="msc" value="The Weeknd" id="MTW">
+                <label class="mb-3" for="MTW">Blinding Lights - The Weeknd</label>
+                <br>
+
+                <input type="radio" name="msc" value="Lady Gaga" id="MLG">
+                <label class="mb-3" for="MLG">Rain on Me - Lady Gaga</label>
+                <br>
+
+                <input type="radio" name="msc" value="Halsey" id="MHY">
+                <label class="mb-3" for="MHY">Without me - Halsey</label>
+                <br>
+
+                <input type="radio" name="msc" value="Jup do Bairro" id="MJB">
+                <label class="mb-3" for="MJB">All you need is love - Jup do Bairro</label>
+                <br>
+
+                <input type="radio" name="msc" value="Pabllo Vittar" id="MPV">
+                <label class="mb-3" for="MPV">Amor de que - Pabllo Vittar</label>
+                <br>
+
+                <input type="radio" name="msc" value="Rina Sawayama" id="MRS">
+                <label class="mb-3" for="MRS">XS - Rina Sawayama</label>
+                <br>
+
+                <input type="radio" name="msc" value="Dua Lipa" id="MDL">
+                <label class="mb-3" for="MDL">Don't start now - Dua Lipa</label>
+                <br>
+
+                <input type="radio" name="msc" value="other" id="otherMusic">
+                <label for="otherMusic">other:</label>
+                <input id="otherMusic2" class="mb-3" type="text" placeholder="Your answer">
+            </fieldset>
+
+            <fieldset id="videocampo" class="Video Bloco px-4 py-2 col-11 bwhite mt-3 mb-3 col-lg-9 col-xl-7">
+                <label class="titleBloc mt-3 mb-3">Melhor Vídeo Clipe<sup>*</sup></label>
+                <br>
+
+                <input type="radio" name="video" value="The Weeknd" id="VTW">
+                <label class="mb-3" for="VTW">Blinding Lights - The Weeknd</label>
+                <br>
+
+                <input type="radio" name="video" value="Lady Gaga" id="VLG">
+                <label class="mb-3" for="VLG">911 - Lady Gaga</label>
+                <br>
+
+                <input type="radio" name="video" value="Lady Gaga2" id="VLG2">
+                <label class="mb-3" for="VLG2">Rain on me - Lady Gaga</label>
+                <br>
+
+
+                <input type="radio" name="video" value="Pabllo Vittar" id="VPV">
+                <label class="mb-3" for="VPV">Parabéns - Pabllo Vittar</label>
+                <br>
+
+                <input type="radio" name="video" value="Rina Sawayama" id="VRS">
+                <label class="mb-3" for="VRS">XS - Rina Sawayama</label>
+                <br>
+
+                <input type="radio" name="video" value="Dua Lipa" id="VDL">
+                <label class="mb-3" for="VDL">Don't start now - Dua Lipa</label>
+                <br>
+
+                <input type="radio" name="video" value="other" id="otherVideo">
+                <label for="otherVideo">other:</label>
+                <input id="otherVideo2" class="mb-3" type="text" placeholder="Your answer">
+            </fieldset>
+
+            <fieldset id="warning" class="warning Bloco px-4 py-2 col-11 mt-3 mb-3 col-lg-9 col-xl-7">
+                <ul id="warninglist" class="">
+
+                </ul>
+            </fieldset>
+
+
+
+
+
+            <fieldset class="ButtonSub col-11 mt-3 mb-3 col-lg-9 col-xl-7 d-flex justify-content-end">
+                <input type="submit" class="btn btn-primary" value="Submit">
+            </fieldset>
+
+        </form>
+    </main>
+
+    <footer class="container">
+        <section class="row justify-content-center mt-3">
+            <article class="col">
+                <p class="mt-2 mb-2">Music Awards</p>
+            </article>
+
+        </section>
+    </footer>
+
+
+
+    <!--Bootstrap JS-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+        </script>
+
+    <!-- JS próprio -->
+    <script src="form.js"></script>
+</body>
